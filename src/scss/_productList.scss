@@ -1,0 +1,51 @@
+@use "./master";
+
+.products-container {
+    width: 100vh;
+    overflow: scroll;
+    display: flex;
+    
+    flex: flex-basis;
+
+    .product-item {
+        flex: none; /* make this flex item inflexible, so width property controls its width entirely */
+        width: 160px;   
+        display: flex;
+        flex-direction: column;
+        background-color: master.$item-background;
+        height: 250px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+
+        .product-title-container{
+            display: flex;
+            flex-direction: column;
+            height: 50px;
+        }
+
+        .product-colors{
+            display: flex;
+            .product-color-item{
+                border-radius: 2px;
+                margin: 3px;
+                width: 7px;
+                height: 7px;
+            }
+        }
+
+        .product-image-container {
+            display: flex;
+            height: 250px;
+            .product-image {
+                width: 120px;
+                height: auto;
+            }
+        }
+        .price{
+            margin: 0;
+            line-height: 0.8;
+        }
+
+    }
+}

@@ -1,0 +1,23 @@
+@use "./master";
+
+.categories-container {
+
+    width: 100vh;
+    overflow: scroll;
+    display: flex;
+
+    .categories {
+        color: master.$text-inactive;
+        cursor: pointer;
+    }
+
+    .categories.active {
+        .title {
+            color: black;
+        }
+
+        .quantity {
+            color: master.$text-sub;
+        }
+    }
+}

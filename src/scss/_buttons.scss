@@ -1,0 +1,41 @@
+@use "./master";
+
+
+.button {
+    cursor: pointer;
+    background-color: master.$base-background !important;
+    border-radius: 10px;
+    border: master.$borders 2px solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+
+.button-round {
+    border-radius: 100%;
+}
+
+.button-sm {
+    padding: 9px 9px;
+    width: 40px;
+    height: 40px;
+}
+.button-bold{
+    font-weight: 700;
+}
+
+.button-dark {
+    background-color: master.$btn-buy !important;
+    color: master.$base-background;
+}
+
+
+
+.button-icon {
+    width: 20px;
+
+    
+}
+

@@ -1,0 +1,17 @@
+@use "./master";
+
+.page-footer {
+    position: fixed;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+
+    .btn-search {
+        padding: 15px;
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        box-shadow: 5px 10px 18px #888888;
+    }
+}

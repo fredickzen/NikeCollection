@@ -1,0 +1,17 @@
+@use  "./master";
+
+body {
+    background-color: master.$base-background;
+    font-family: 'Product Sans', sans-serif !important;
+}
+.main{
+    margin-bottom: 150px;
+}
+
+.reverse {
+    transform: rotate(180deg);
+}
+
+.invisible-scroll::-webkit-scrollbar {
+    display: none;
+}

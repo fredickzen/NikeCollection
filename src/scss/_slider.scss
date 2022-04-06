@@ -1,0 +1,52 @@
+@use "./master";
+
+
+.banner-slide {
+    background-color: master.$item-background;
+    border-radius: 10px;
+    height: 180px;
+    display: flex;
+    justify-content: space-between !important;
+    flex-direction: row;
+    padding: 10px;
+    margin: 15px 0px;
+
+    .banner-slide-content{
+        flex-grow: 1;
+        margin: 15px 5px;
+    }
+
+    .banner-slide-presentation{
+        flex-grow: 1;
+        display:flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .img-main-banner {
+        max-width: 200px;
+        height: auto;
+        margin-top: -25px;
+        margin-right: -20px;
+    }
+
+}
+
+
+
+// Fix Library
+
+.indicators {
+    margin-top: 5px !important;
+}
+
+.react-slideshow-container+ul.indicators 
+.each-slideshow-indicator::before{
+    width: 6px !important;
+    height: 6px !important;
+}
+
+.react-slideshow-container+ul.indicators 
+.each-slideshow-indicator.active::before{
+    background-color: red !important;
+}
